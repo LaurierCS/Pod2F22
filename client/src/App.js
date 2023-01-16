@@ -1,16 +1,12 @@
 import React from 'react'
-import { Switch, Router, Route, HashRouter } from "react-router-dom";
-
+import {Route, Routes} from "react-router-dom";
+import ImageUpload from './components/ImageUpload';
 
 function App() {
   return (
-    <HashRouter basename="/Image-Grader/">
-      <Switch>
-        <Route
-          
-        />
-      </Switch>
-    </HashRouter>
+    <Routes>
+      <Route path = "/grading" element = {<ImageUpload/>} />
+    </Routes>
   );
 }
 
