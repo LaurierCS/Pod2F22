@@ -1,0 +1,7 @@
+<form method="post">
+    {% csrf_token %}
+    {% if error %}<p style="color: red">{{ error }}</p>{% endif %}
+    <input type="text" name="username" placeholder="Username">
+    <input type="password" name="password" placeholder="Password">
+    <input type="submit" value="Login">
+</form>
